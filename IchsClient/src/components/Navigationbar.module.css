@@ -1,0 +1,29 @@
+/* Navigationbar.module.css */
+.nav {
+  background-color: #119777;
+  padding-top: 15px;
+  padding-bottom: 1px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  /* Add padding for better spacing */
+}
+
+li {
+  flex: 1;
+  text-align: center;
+  /* Optional: Align text to the center within each item */
+}
+
+
+.activeLink {
+  /* Your active link styles here */
+  color: orange;
+}

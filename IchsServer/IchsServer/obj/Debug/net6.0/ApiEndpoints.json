@@ -1,0 +1,70 @@
+[
+  {
+    "ContainingType": "IchsServer.Controllers.DotaznikController",
+    "Method": "DotaznikCompute",
+    "RelativePath": "DotaznikCompute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "IchsServer.Models.Dotaznik",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IchsServer.Controllers.DotaznikController",
+    "Method": "FactorCompute",
+    "RelativePath": "FactorCompute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Factors",
+        "Type": "System.String[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IchsServer.Controllers.IchsDatasetController",
+    "Method": "Get",
+    "RelativePath": "Records",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[IchsServer.Db.IchsDataset, IchsServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IchsServer.Controllers.DotaznikController",
+    "Method": "TableFactorCompute",
+    "RelativePath": "TableFactorCompute",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Factors",
+        "Type": "System.String[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

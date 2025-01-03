@@ -1,0 +1,199 @@
+.table-page {
+    display: flex;
+    flex-direction: column;
+   /* align-items: center; */
+}
+
+.choose-risk-factors-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tip {
+    background-color: #57cfeb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 1200px; 
+    height: auto;
+}
+
+.tip-text {
+    flex: 1;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+
+.detail-button {
+    background-color: #101c19;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+
+.dropdown-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.dropdown-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+
+
+.table-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f3b2; /* Placeholder color */
+}
+
+.table-header {
+    background-color: #119777;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+.risk-header {
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 10px;
+    color: rgb(8, 90, 141);
+    border-bottom: #006400;
+    border-width: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+    width: 100%;
+    
+}
+
+.big-element {
+ /*   flex: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-container {
+    width: 300px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.risk-factors {
+    margin-bottom: 20px;
+}
+
+
+.legend {
+    margin-bottom: 20px;
+}
+
+.risk-factors h2,
+.legend h2 {
+    background-color: #119777;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.risk-factors ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.risk-factors ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+    border-bottom: 1px dotted #ccc;
+}
+
+.remove-button {
+    background-color:#e81212;
+    color:aliceblue;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    border-color: black;
+    
+
+}
+
+
+.legend h3 {
+    margin: 10;
+    font-size: 16px;
+    color: #006400;
+    border-bottom: 1px solid #000f64;
+    padding-bottom: 5px;
+}
+
+.legend p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.color-box.red {
+    background-color: red;
+}
+
+.color-box.green {
+    background-color: green;
+}
+
+.color-box.multicolor {
+    background: linear-gradient(to right, red, green, blue);
+}
+
