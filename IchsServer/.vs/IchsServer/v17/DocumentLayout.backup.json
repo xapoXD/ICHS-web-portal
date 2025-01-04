@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\",
+  "WorkspaceRootPath": "D:\\School\\Diploma\\ICHS\\IchsServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|e:\\project\\karasek_projekt_ii\\ichsserver\\ichsserver\\controllers\\dotaznikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\controllers\\dotaznikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|e:\\project\\karasek_projekt_ii\\ichsserver\\ichsserver\\controllers\\ichsdatasetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\controllers\\ichsdatasetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|e:\\project\\karasek_projekt_ii\\ichsserver\\ichsserver\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\services\\scoreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|e:\\project\\karasek_projekt_ii\\ichsserver\\ichsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|e:\\project\\karasek_projekt_ii\\ichsserver\\ichsserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\controllers\\dotaznikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\controllers\\dotaznikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DotaznikController.cs",
-              "DocumentMoniker": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Controllers\\DotaznikController.cs",
+              "DocumentMoniker": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Controllers\\DotaznikController.cs",
               "RelativeDocumentMoniker": "IchsServer\\Controllers\\DotaznikController.cs",
-              "ToolTip": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Controllers\\DotaznikController.cs",
+              "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Controllers\\DotaznikController.cs",
               "RelativeToolTip": "IchsServer\\Controllers\\DotaznikController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAvwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-03T10:23:21.966Z",
               "IsPinned": true,
@@ -48,51 +40,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ScoreService.cs",
-              "DocumentMoniker": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Services\\ScoreService.cs",
-              "RelativeDocumentMoniker": "IchsServer\\Services\\ScoreService.cs",
-              "ToolTip": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Services\\ScoreService.cs",
-              "RelativeToolTip": "IchsServer\\Services\\ScoreService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T09:06:45.146Z"
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "IchsServer\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Properties\\launchSettings.json",
+              "RelativeToolTip": "IchsServer\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-04T11:51:14.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IchsDatasetController.cs",
-              "DocumentMoniker": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Controllers\\IchsDatasetController.cs",
-              "RelativeDocumentMoniker": "IchsServer\\Controllers\\IchsDatasetController.cs",
-              "ToolTip": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Controllers\\IchsDatasetController.cs",
-              "RelativeToolTip": "IchsServer\\Controllers\\IchsDatasetController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:15:41.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "IchsServer\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Properties\\launchSettings.json",
-              "RelativeToolTip": "IchsServer\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-31T12:08:23.2Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Program.cs",
+              "DocumentMoniker": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Program.cs",
               "RelativeDocumentMoniker": "IchsServer\\Program.cs",
-              "ToolTip": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\Program.cs",
+              "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Program.cs",
               "RelativeToolTip": "IchsServer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T10:11:22.829Z"
+              "WhenOpened": "2024-08-29T10:11:22.829Z",
+              "EditorCaption": ""
             }
           ]
         }

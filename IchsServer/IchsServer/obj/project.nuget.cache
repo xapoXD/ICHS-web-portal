@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vncewr0kGlw=",
+  "dgSpecHash": "3MQImpCBHcg=",
   "success": true,
-  "projectFilePath": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\IchsServer.csproj",
+  "projectFilePath": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\IchsServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jan1k\\.nuget\\packages\\csvhelper\\32.0.3\\csvhelper.32.0.3.nupkg.sha512",
     "C:\\Users\\Jan1k\\.nuget\\packages\\fhir.metrics\\1.2.2\\fhir.metrics.1.2.2.nupkg.sha512",

@@ -77,7 +77,19 @@ namespace IchsServer.Controllers
             Console.WriteLine("GENDER: " + data.Gender);
 
 
+            /*
+            // 2. Validate data fields
 
+    if (string.IsNullOrWhiteSpace(data.Name) || 
+        string.IsNullOrWhiteSpace(data.LastName) ||
+        data.DateOfBirth == default ||
+        data.Weight <= 0 || 
+        data.Height <= 0)
+    {
+        return BadRequest("Invalid data provided");
+    }
+
+            */
 
 
 
@@ -92,7 +104,7 @@ namespace IchsServer.Controllers
             Guid gg = Guid.NewGuid();
             string? dateOfBirth = Convert.ToDateTime(data.DateOfBirth).ToString("yyyy-MM-dd");
 
-            var patient = new Patient() //TODO: ADDRESS
+            var patient = new Patient() 
             {
                 Id = gg.ToString(),
                 Name = new List<HumanName>()

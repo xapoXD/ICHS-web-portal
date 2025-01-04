@@ -1,0 +1,300 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "IchsServer",
+    "version": "1.0"
+  },
+  "paths": {
+    "/DotaznikCompute": {
+      "post": {
+        "tags": [
+          "Dotaznik"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Dotaznik"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Dotaznik"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Dotaznik"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/FactorCompute": {
+      "post": {
+        "tags": [
+          "Dotaznik"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/TableFactorCompute": {
+      "post": {
+        "tags": [
+          "Dotaznik"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Records": {
+      "get": {
+        "tags": [
+          "IchsDataset"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IchsDataset"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IchsDataset"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/IchsDataset"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Dotaznik": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "LastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "DateOfBirth": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "AddressStreetNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "AddressPostalCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "AddressCity": {
+            "type": "string",
+            "nullable": true
+          },
+          "AddressCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "Height": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Weight": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "PhysicalActivity": {
+            "type": "boolean"
+          },
+          "Smoking": {
+            "type": "boolean"
+          },
+          "Alcohol": {
+            "type": "boolean"
+          },
+          "PressureSys": {
+            "type": "string",
+            "nullable": true
+          },
+          "PressureDias": {
+            "type": "string",
+            "nullable": true
+          },
+          "VegieFruit": {
+            "type": "boolean"
+          },
+          "Stress": {
+            "type": "boolean"
+          },
+          "Sugar": {
+            "type": "string",
+            "nullable": true
+          },
+          "Cholesterol": {
+            "type": "string",
+            "nullable": true
+          },
+          "Gender": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IchsDataset": {
+        "type": "object",
+        "properties": {
+          "SubjectId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Pohlavi": {
+            "type": "string",
+            "nullable": true
+          },
+          "RokNar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Vaha": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Vyska": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Sys": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Dia": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Ldl": {
+            "type": "number",
+            "format": "double"
+          },
+          "Glykemie": {
+            "type": "number",
+            "format": "double"
+          },
+          "Region": {
+            "type": "string",
+            "nullable": true
+          },
+          "Kouri": {
+            "type": "boolean"
+          },
+          "FyzLimit": {
+            "type": "boolean"
+          },
+          "Alkohol": {
+            "type": "boolean"
+          },
+          "OvoceZelenina": {
+            "type": "boolean"
+          },
+          "Stres": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

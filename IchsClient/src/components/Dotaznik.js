@@ -5,8 +5,19 @@ import './Dotaznik.css';
 import { Checkbox } from 'pretty-checkbox-react'; // , Radio, Switch }
 import '@djthoms/pretty-checkbox';
 
+import {
+    CircularProgressbar,
+    CircularProgressbarWithChildren,
+    buildStyles
+} from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
+
 
 function Dotaznik() {
+
+
+    const value = 15;
+
 
     const [serverResponse, setServerResponse] = useState({
         alcoholF: false,
@@ -27,7 +38,7 @@ function Dotaznik() {
         //xxconsole.log(formData);
         // Make the API request
         try {
-            const response = await fetch('http://192.168.68.105:5085/DotaznikCompute', {
+            const response = await fetch('http://localhost:5085/DotaznikCompute', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -134,7 +145,7 @@ function Dotaznik() {
                         ...formData,
                         Gender: updatedValue,
                     });
-                } 
+                }
 
                 else {
                     // Handle other checkboxes
@@ -168,7 +179,7 @@ function Dotaznik() {
 
             <form onSubmit={(e) => submit(e, formData)}>
 
-                <div style={{ lineHeight: '2' }}>
+                <div style={{ lineHeight: '2', marginTop: '40px' }}>
                     <h2>K čemu slouží dotazník?</h2>
                     <p>Dotazník slouží pro zhodnocení, jestli jste ohrožen/á nějaký rizikovým faktorem Ischemické choroby srdeční. Odpovídejte pravdivě a na konci dotazíku, se Vám zobrazí seznam rizikových faktorů, které by Vás mohly potencionálně ohrožovat. Věnujte poté chvíli svého času a prostudujte si informace na stránce Rizikové faktory, popřípadě se obraťe na stránku Prevence.</p>
 
@@ -218,47 +229,57 @@ function Dotaznik() {
                 </div>
 
 
-                
-                <div style={{ display: 'flex', flexDirection: 'row' }}>
-                    <div style={{ marginRight: '100px' }}>
+
+                <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
+                    <div>
                         <label>
-                            Pohlaví?
+                            Pohlaví:
                         </label>
                     </div>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', marginRight: '100px' }}>
-                        <Checkbox 
-                            // man Gender TRUE
-                            shape="round"
-                            variant="fill"
-                            name="GenderCheckbox"
-                            value="men"
-                            checked={formData.Gender === 'men'}
-                            onChange={handleChange}
-                        />
-                        <label>Muž</label>
-                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', marginRight: '50px' }}>
-                        <Checkbox
-                            // woman Gender FALSE
-                            shape="round"
-                            variant="fill"
-                            name="GenderCheckbox"
-                            value="woman"
-                            checked={formData.Gender === 'woman'}
-                            onChange={handleChange}
-                        />
-                        <label>Žena</label>
+                        <div style={{ display: 'flex', flexDirection: 'column', marginRight: '100px' }}>
+                            <Checkbox style={{ marginBottom: '10px' }}
+                                // man Gender TRUE
+                                shape="round"
+                                variant="fill"
+                                name="GenderCheckbox"
+                                value="men"
+                                checked={formData.Gender === 'men'}
+                                onChange={handleChange}
+                            />
+                            <label>Muž</label>
+                        </div>
+
+                        <div style={{ display: 'flex', flexDirection: 'column' }}>
+                            <Checkbox style={{ marginBottom: '10px' }}
+                                // woman Gender FALSE  
+                                shape="round"
+                                variant="fill"
+                                name="GenderCheckbox"
+                                value="woman"
+                                checked={formData.Gender === 'woman'}
+                                onChange={handleChange}
+                            />
+                            <label>Žena</label>
+                        </div>
+
                     </div>
 
 
                 </div>
 
-
+                <hr
+                    style={{
+                        backgroundColor: '#119777',
+                        height: '3px',
+                        marginBottom: '30px'
+                    }}
+                />
 
                 <label>
-                        Adresa bydliště:
+                    Adresa bydliště:
                 </label>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
                     <label>
@@ -678,25 +699,55 @@ function Dotaznik() {
                 </div>
 
 
-                <div style={{marginBottom: '30px'}}>
-                    Vaše vyhodnocená míra rizika podle metody SCORE je: <bold style={{color: 'red'}}>{serverResponse.score}</bold>
-                </div>
+
             </form>
 
             <div
                 style={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
+                    flexDirection: 'column',
                     marginBottom: '100px'
                 }}
             >
 
-                <ResponseComponent serverResponse={serverResponse} />
+                <div
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+
+                        marginBottom: '100px'
+                    }}
+                >
+
+                    <ResponseComponent serverResponse={serverResponse} />
+
+
+                </div>
+
+                <div>
+
+                    <div style={{ marginBottom: '30px', fontSize: '18px', lineHeight: '2' }}>
+                        Vaše vyhodnocená míra rizika podle metody SCORE je: 
+                    </div>
+
+                    <CircularProgressbar style={{width: '400px', height: '400px', }}
+                        value={serverResponse.score}
+                        maxValue={57}
+                        text={serverResponse.score}
+                        styles={buildStyles({
+                            textColor: "red",
+                            pathColor: "red",
+                        })}
+                    />
+                </div>
 
             </div>
 
+
+
         </div>
+
 
     );
 

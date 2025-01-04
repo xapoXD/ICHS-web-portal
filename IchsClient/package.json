@@ -13,9 +13,10 @@
     "pretty-checkbox-react": "^3.2.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^3.4.4",
     "rsuite": "^5.64.1",
     "web-vitals": "^2.1.4"
   },

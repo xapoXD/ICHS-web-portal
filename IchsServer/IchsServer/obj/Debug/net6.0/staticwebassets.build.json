@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "sCSaZFmvv5yBjaNfVBI+0AijiqxtYD/CrFkrTj38C5g=",
+  "Hash": "YAlPZRcV3txF9g4McBGYOBkx6/HPgZF5wrqE+ZnawPE=",
   "Source": "IchsServer",
   "BasePath": "_content/IchsServer",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

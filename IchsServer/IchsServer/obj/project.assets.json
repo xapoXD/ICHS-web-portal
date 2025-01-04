@@ -5848,11 +5848,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\IchsServer.csproj",
+      "projectUniqueName": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\IchsServer.csproj",
       "projectName": "IchsServer",
-      "projectPath": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\IchsServer.csproj",
+      "projectPath": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\IchsServer.csproj",
       "packagesPath": "C:\\Users\\Jan1k\\.nuget\\packages\\",
-      "outputPath": "E:\\PROJECT\\karasek_projekt_II\\IchsServer\\IchsServer\\obj\\",
+      "outputPath": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
