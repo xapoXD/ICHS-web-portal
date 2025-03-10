@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Map.css'; // Import your CSS file for styling
+import './Map.css'; 
 import MapComponent from './custom/MapComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -68,7 +68,7 @@ const MapPage = () => {
         console.log(formData);
 
         try {
-            const response = await fetch('http://192.168.68.105:5085/FactorCompute', {
+            const response = await fetch('http://localhost:5085/FactorCompute', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

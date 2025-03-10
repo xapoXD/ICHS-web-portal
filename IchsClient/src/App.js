@@ -2,10 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/Navigationbar';
-import Dotaznik from './components/Dotaznik'; // Create Home, About, Contact components for each page
+import Dotaznik from './components/Dotaznik'; 
 import RizikoveFaktory from './components/RizikoveFaktory'; 
 import Map from './components/Map';
 import Table from './components/Table';
+import Prevention from './components/Prevention'; 
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/RizikoveFaktory" element={<RizikoveFaktory />} />
           <Route path="/Map" element={<Map />} />
           <Route path="/Table" element={<Table />} />
+          <Route path="/" element={<Prevention />} />
         </Routes>
 
       </div>
