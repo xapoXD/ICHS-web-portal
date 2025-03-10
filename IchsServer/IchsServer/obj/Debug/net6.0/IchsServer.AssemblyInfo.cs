@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IchsServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fd0a3178d486db048c60f42816cecb5f6f0837f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+270bdd4295d99eb02ab21f0227d297de0a3055b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("IchsServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IchsServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
