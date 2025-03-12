@@ -44,19 +44,19 @@ const ResponseComponent = ({ serverResponse }) => {
     const order = ['diabetesF', 'alcoholF', 'dyslipidemicF', 'obesityF', 'psychosocialF', 'physicalF', 'hypertenseF', 'vegieAndFruitF', 'smokingF'];
 
     const contentMapping = {
-        alcoholF: { image: alcoholPic, text: 'NADMĚRNÁ KONZUMACE ALKOHOLU' },
-        diabetesF: { image: diabetesPic, text: 'DIABETES' },
-        dyslipidemicF: { image: dyslipidPic, text: 'DYSLIPIDÉMIE' },
-        psychosocialF: { image: psychosocPic, text: 'PSYCHOSOCIÁLNÍ FAKTORY' },
-        obesityF: { image: obesityPic, text: 'OBEZITA' },
-        physicalF: { image: physicalPic, text: 'FYZICKÁ NEČINNOST' },
-        hypertenseF: { image: hypertensePic, text: 'HYPERTENZE' },
-        smokingF: { image: smokingPic, text: 'KOUŘENÍ' },
-        vegieAndFruitF: { image: veggiePic, text: 'NEDOSTATEK OVOCE A ZELENINY' },
+        alcoholF: { image: alcoholPic, text: 'NADMĚRNÁ KONZUMACE ALKOHOLU', anchor: 'alcohol' },
+        diabetesF: { image: diabetesPic, text: 'DIABETES', anchor: 'diabetes' },
+        dyslipidemicF: { image: dyslipidPic, text: 'DYSLIPIDÉMIE', anchor: 'dyslipidemic' },
+        psychosocialF: { image: psychosocPic, text: 'PSYCHOSOCIÁLNÍ FAKTORY', anchor: 'psychosocial' },
+        obesityF: { image: obesityPic, text: 'OBEZITA', anchor: 'obesity' },
+        physicalF: { image: physicalPic, text: 'FYZICKÁ NEČINNOST', anchor: 'physical' },
+        hypertenseF: { image: hypertensePic, text: 'HYPERTENZE', anchor: 'hypertense' },
+        smokingF: { image: smokingPic, text: 'KOUŘENÍ', anchor: 'smoking' },
+        vegieAndFruitF: { image: veggiePic, text: 'NEDOSTATEČNÁ KONZUAMCE OVOCE A ZELENINY', anchor: 'vegieAndFruit' },
     };
 
     const smallerRectangles = order.map((key) => {
-        const { text } = contentMapping[key];
+        const { text, anchor } = contentMapping[key];
         return (
             <div
                 key={key}
@@ -66,14 +66,16 @@ const ResponseComponent = ({ serverResponse }) => {
                 }}
             >
                 {contentMapping[key] && contentMapping[key].image && (
-                    <>
-                        <img
-                            src={contentMapping[key].image}
-                            alt={`Image for ${key}`}
-                            style={imageStyle}
-                        />
-                        <p style={textStyle}>{text}</p>
-                    </>
+                    <a href={`/#${anchor}`} style={{ textDecoration: 'none' }}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <img
+                                src={contentMapping[key].image}
+                                alt={`Image for ${key}`}
+                                style={imageStyle}
+                            />
+                            <p style={textStyle}>{text}</p>
+                        </div>
+                    </a>
                 )}
             </div>
         );
@@ -81,7 +83,6 @@ const ResponseComponent = ({ serverResponse }) => {
 
     return (
         <div>
-           
             <div style={baseRectangleStyle}>
                 <div style={{ display: 'flex', flexWrap: 'wrap' }}>{smallerRectangles}</div>
             </div>

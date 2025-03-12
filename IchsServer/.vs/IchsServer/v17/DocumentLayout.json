@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\controllers\\dotaznikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\controllers\\dotaznikcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\db\\ichsdataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\db\\ichsdataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\db\\ichsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\db\\ichsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|d:\\school\\diploma\\ichs\\ichsserver\\ichsserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{71904217-5F5C-40D9-BD7C-283C538772A2}|IchsServer\\IchsServer.csproj|solutionrelative:ichsserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,49 +24,10 @@
               "RelativeDocumentMoniker": "IchsServer\\Controllers\\DotaznikController.cs",
               "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Controllers\\DotaznikController.cs",
               "RelativeToolTip": "IchsServer\\Controllers\\DotaznikController.cs",
-              "ViewState": "AgIAAKYBAAAAAAAAAAAwwMcBAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAALMBAAAAAAAAAAAnwNYBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-03T10:23:21.966Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IchsDataset.cs",
-              "DocumentMoniker": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Db\\IchsDataset.cs",
-              "RelativeDocumentMoniker": "IchsServer\\Db\\IchsDataset.cs",
-              "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Db\\IchsDataset.cs",
-              "RelativeToolTip": "IchsServer\\Db\\IchsDataset.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T11:03:19.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IchsDbContext.cs",
-              "DocumentMoniker": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Db\\IchsDbContext.cs",
-              "RelativeDocumentMoniker": "IchsServer\\Db\\IchsDbContext.cs",
-              "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\Db\\IchsDbContext.cs",
-              "RelativeToolTip": "IchsServer\\Db\\IchsDbContext.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwCQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T11:02:31.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\appsettings.json",
-              "RelativeDocumentMoniker": "IchsServer\\appsettings.json",
-              "ToolTip": "D:\\School\\Diploma\\ICHS\\IchsServer\\IchsServer\\appsettings.json",
-              "RelativeToolTip": "IchsServer\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-28T10:54:49.555Z",
               "EditorCaption": ""
             }
           ]

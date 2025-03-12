@@ -4,6 +4,8 @@ import MapComponent from './custom/MapComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
+import API_BASE_URL from "../config/apiConfig";
 
 const MapPage = () => {
     const [formData, setFormData] = useState({
@@ -68,7 +70,7 @@ const MapPage = () => {
         console.log(formData);
 
         try {
-            const response = await fetch('http://localhost:5085/FactorCompute', {
+            const response = await fetch(`${API_BASE_URL}/FactorCompute`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -109,6 +111,12 @@ const MapPage = () => {
         }
     };
 
+
+    const navigate = useNavigate();
+    const handleClickToTableView = () => {
+      navigate('/Table');
+        };
+
     return (
         <div className="map-page">
             <form className="choose-risk-factors-section" onSubmit={(e) => submit(e, selectedFactors)}>
@@ -117,10 +125,17 @@ const MapPage = () => {
                         <strong>TIP:</strong> Rizikové faktory je možno vybírat pouze tři najednou. Pro odebrání rizikového faktoru
                         odškrtněte daný rizikový faktor. Doporučujeme si pro výběr vybrat pro Vás nejdůležitější první
                         faktor a následně dle možnosti vyzkoušet a kombinovat dostupné další rizikové faktory. Výsledky
-                        se zobrazují graficky na mapě v dolní části stránky.
+                        se zobrazují graficky na mapě v dolní části stránky. Pro zobrazení detailnějších dat a tabulkového rozhraní použijte tlačítko.
                     </p>
-                    <div className="detail-button">Zobrazit detailnější data</div>
+
+                    <Button
+                        as="input"
+                        value="Zobrazit detailnější data"
+                        onClick={handleClickToTableView}  
+                        className="detail-button"
+                    />
                 </div>
+
 
                 <div className='risk-header'>
                     <h2>Vyberte rizikové faktory</h2>

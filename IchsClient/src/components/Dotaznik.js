@@ -4,6 +4,7 @@ import ResponseComponent from './custom/ResponseComponent';
 import './Dotaznik.css';
 import { Checkbox } from 'pretty-checkbox-react'; // , Radio, Switch }
 import '@djthoms/pretty-checkbox';
+import API_BASE_URL from "../config/apiConfig";
 
 import {
     CircularProgressbar,
@@ -38,7 +39,7 @@ function Dotaznik() {
         //xxconsole.log(formData);
         // Make the API request
         try {
-            const response = await fetch('http://localhost:5085/DotaznikCompute', {
+            const response = await fetch(`${API_BASE_URL}/DotaznikCompute`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -734,6 +735,7 @@ function Dotaznik() {
                     <CircularProgressbar style={{width: '400px', height: '400px', }}
                         value={serverResponse.score}
                         maxValue={57}
+                        minValue={0}
                         text={serverResponse.score}
                         styles={buildStyles({
                             textColor: "red",

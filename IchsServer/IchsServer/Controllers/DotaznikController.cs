@@ -7,6 +7,8 @@ using IchsServer.Services;
 using IchsServer.Db;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.AspNetCore.Authentication;
+using System.Globalization;
 
 
 namespace IchsServer.Controllers
@@ -259,13 +261,25 @@ namespace IchsServer.Controllers
             bundle.Entry.Add(fifth_entry);
 
             // Cholesterol
-            string StrCholesterol = data.Cholesterol;
-            int Cholesterol;
-            bool isParsableChol = Int32.TryParse(StrCholesterol, out Cholesterol);
+            string StrCholesterol = data.Cholesterol.Replace(".", ",");
+            decimal Cholesterol;
+
+            bool isParsableChol = Int32.TryParse(StrCholesterol, out int CholesterolInt);
             if (isParsableChol)
-                Console.WriteLine(Cholesterol);
+            {
+                Cholesterol = CholesterolInt; // Store as decimal
+            }
+            // If parsing as int fails, try parsing as a decimal
+            else if (Decimal.TryParse(StrCholesterol, NumberStyles.Any, CultureInfo.InvariantCulture, out decimal CholesterolDecimal))
+            {
+                Cholesterol = CholesterolDecimal;
+            }
             else
-                Console.WriteLine("Cholesterol Could not be parsed.");
+            {
+                Console.WriteLine("Could not parse cholesterol to a valid number.");
+                Cholesterol = 0;
+            }
+
 
             var LDLCholesterol = new Observation()
             {
@@ -428,6 +442,8 @@ namespace IchsServer.Controllers
             }
             else { riskFactorsResponce.diabetesF = false;}
             
+
+
             if(Cholesterol <= 3) { riskFactorsResponce.dyslipidemicF = true; } 
             else { riskFactorsResponce.dyslipidemicF = false; }
 
@@ -441,14 +457,14 @@ namespace IchsServer.Controllers
             {
                 Cholesterol = 4;
             }
-
+           
             // count age 
             var today = DateTime.Today;
             var age = today.Year - data.DateOfBirth.Year;
             // Go back to the year in which the person was born in case of a leap year
             if (data.DateOfBirth.Date > today.AddYears(-age)) age--;
 
-            int score = GetRiskScore(data.Gender, riskFactorsResponce.smokingF, RoundOff(age), FindClosestNumber(Systolic), Cholesterol);
+            int score = GetRiskScore(data.Gender, riskFactorsResponce.smokingF, RoundOff(age), FindClosestNumber(Systolic), (int)Math.Round(Cholesterol, MidpointRounding.AwayFromZero));
             riskFactorsResponce.score = score;
 
 

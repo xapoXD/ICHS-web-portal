@@ -4,8 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
 import TableView from './custom/TableComponent'; // Import the correct component
+import API_BASE_URL from "../config/apiConfig";
 
 const Table = () => {
+
+
+
     const [formData, setFormData] = useState({
         alcoholF: false,
         vegieAndFruitF: false,
@@ -62,7 +66,7 @@ const Table = () => {
         console.log(formData);
 
         try {
-            const response = await fetch('http://192.168.68.114:5085/TableFactorCompute', {
+            const response = await fetch(`${API_BASE_URL}/TableFactorCompute`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -87,6 +91,15 @@ const Table = () => {
     return (
         <div className="table-page">
             <form className="choose-risk-factors-section" onSubmit={(e) => submit(e, selectedFactors)}>
+
+            <div className="tip">
+                    <p className="tip-text">
+                        <strong>TIP:</strong> Rizikové faktory je možno vybírat pouze tři najednou. Pro odebrání rizikového faktoru
+                        odškrtněte daný rizikový faktor. Doporučujeme si pro výběr vybrat pro Vás nejdůležitější první
+                        faktor a následně dle možnosti vyzkoušet a kombinovat dostupné další rizikové faktory. Výsledky
+                        se zobrazují graficky na mapě v dolní části stránky.
+                    </p>
+                </div>
 
                 <div className='risk-header'>
                     <h2>Vyberte rizikové faktory</h2>

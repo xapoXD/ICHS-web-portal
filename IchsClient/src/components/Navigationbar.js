@@ -8,27 +8,42 @@ function NavigationBar() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <NavLink to="/" className={styles.navLink} >
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Table" className={styles.navLink} >
+          <NavLink 
+            to="/Table" 
+            className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+          >
             Data k projektu
           </NavLink>
         </li>
         <li>
-          <NavLink to="/RizikoveFaktory" className={styles.navLink} >
+          <NavLink 
+            to="/RizikoveFaktory" 
+            className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+          >
             Rizikové Faktory
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Dotaznik" className={styles.navLink} >
+          <NavLink 
+            to="/Dotaznik" 
+            className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+          >
             Dotaznik
           </NavLink>
         </li>
         <li>
-          <NavLink to="/Map" className={styles.navLink} >
+          <NavLink 
+            to="/Map" 
+            className={({ isActive }) => isActive ? `${styles.navLink} ${styles.activeLink}` : styles.navLink}
+          >
             Mapa
           </NavLink>
         </li>

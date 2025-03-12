@@ -14,14 +14,16 @@ function App() {
       <div className="App">
  
         <NavigationBar />
-
-        <Routes>
-          <Route path="/Dotaznik" element={<Dotaznik />} />
-          <Route path="/RizikoveFaktory" element={<RizikoveFaktory />} />
-          <Route path="/Map" element={<Map />} />
-          <Route path="/Table" element={<Table />} />
-          <Route path="/" element={<Prevention />} />
-        </Routes>
+        <div //style={{maxWidth: '1300px', margin: '0 auto', textAlign: 'center'}}
+        >
+          <Routes >
+            <Route path="/Dotaznik" element={<Dotaznik />} />
+            <Route path="/RizikoveFaktory" element={<RizikoveFaktory />} />
+            <Route path="/Map" element={<Map />} />
+            <Route path="/Table" element={<Table />} />
+            <Route path="/" element={<Prevention />} />
+          </Routes>
+        </div>
 
       </div>
     </Router>
